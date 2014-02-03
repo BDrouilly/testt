@@ -43,6 +43,7 @@ public class DatabaseHandler {
 		ResultSet result = null;
 		try {
 			Statement state = this.connection.createStatement();
+			System.out.println("--- Trying to execute Query : " + query);
 			result = state.executeQuery(query);
 		} catch (Exception e) {
 			System.out.println("--- Fail querying --- Query = " + query);
@@ -57,6 +58,7 @@ public class DatabaseHandler {
 	public void setRows(String query) {
 		try {
 			Statement state = this.connection.createStatement();
+			System.out.println("--- Trying to execute Query : " + query);
 			state.executeUpdate(query);
 		} catch (Exception e) {
 			System.out.println("--- Fail Seting rows --- Query = " + query);
