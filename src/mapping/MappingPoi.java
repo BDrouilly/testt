@@ -73,6 +73,34 @@ public class MappingPoi {
 		this.query = "SELECT * FROM TB_POI WHERE POI_LABEL = " + label;
 		return db.getRows(this.query);		
 	}
+        
+        public ResultSet SearchPOI(String search, String categorie, int mapID) {//fonction de recherche
+
+            int i = 0; //compteur
+            
+            String sql = "SELECT POI_ID, POI_NAME FROM TB_POI INNER JOIN TB_MAP ON TB_POI.MAP_ID = TB_MAP.MAP_ID ";
+            
+            if (mapID > 0)
+                sql += "WHERE MAP_ID=" + mapID + " AND ";
+            else
+                sql += "WHERE ";
+                        
+            sql += "POI_CATEGORIE=%" + categorie + "%" +  
+                    " AND ("; //debut de requete sql
+            String mots[] = search.split(" ");//On separe la chaine en mots cles
+            for (String mot : mots) {//pour chaque mot
+                sql += " POI_NAME LIKE %" + mot + "% OR POI_DESCRIPTION LIKE %" + mot + "% OR"; //on ajoute la recherche Ã  la requete SQL en crÃ©ant des param avec le compteur
+            }
+            sql += " 1=0 )"; //on ajoute la fin de la requete, avec une condition or toujours fausse et une limite au nb de resultats
+
+            System.out.println("requete utilisée:"+sql);
+            return db.getRows(sql);//on execute la requete
+      
+    }
+        
+        
+        
+        
 	/**
 	 * add a new POI into 
 	 * @param name

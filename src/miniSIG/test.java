@@ -1,10 +1,15 @@
 package miniSIG;
 
+import java.sql.*;
+import mapping.*;
+
 public class test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		// TODO Generate method body
+            MappingPoi mpoi = new MappingPoi();
+            ResultSet rs;
+            
+            mpoi.SearchPOI("le rez", "cate", 1);
 	}
 
 }
