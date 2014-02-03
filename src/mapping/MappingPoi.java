@@ -1,5 +1,5 @@
 /**
- * 
+ * TODO Add body to methods and table/fields name to queries
  */
 package mapping;
 
