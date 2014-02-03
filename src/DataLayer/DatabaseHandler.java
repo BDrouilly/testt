@@ -35,8 +35,8 @@ public class DatabaseHandler {
 		}
 	}
 	/**
-	 * @define Method which return a selected ResultSet of rows
-	 * @param state : Statement
+	 * return a selected ResultSet of rows
+	 * @param query : String
 	 * @return result : ResultSet
 	 */
 	public ResultSet getRows(String query) {
@@ -52,7 +52,7 @@ public class DatabaseHandler {
 		return result;
 	}
 	/**
-	 * @define Method which insert or update a row in a database
+	 * insert or update a row in a database
 	 * @param query : String
 	 */
 	public void setRows(String query) {
