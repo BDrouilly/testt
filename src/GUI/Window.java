@@ -104,7 +104,7 @@ public class Window extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(Information_PanelLayout.createSequentialGroup()
                         .addComponent(Picture_POI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                         .addGroup(Information_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Info3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Info2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -175,13 +175,13 @@ public class Window extends javax.swing.JFrame {
 
         Combo_Interface.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/addmark.PNG"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/addmark.PNG")));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/delmark.PNG"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/delmark.PNG")));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/fleche_suivant.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/fleche_suivant.png")));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/fleche_precedent.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/fleche_precedent.png")));
 
         javax.swing.GroupLayout Navigation_PanelLayout = new javax.swing.GroupLayout(Navigation_Panel);
         Navigation_Panel.setLayout(Navigation_PanelLayout);

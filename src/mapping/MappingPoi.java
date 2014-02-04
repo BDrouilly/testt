@@ -93,7 +93,7 @@ public class MappingPoi {
             }
             sql += " 1=0 )"; //on ajoute la fin de la requete, avec une condition or toujours fausse et une limite au nb de resultats
 
-            System.out.println("requete utilisée:"+sql);
+            System.out.println("requete de recherche utilisée:"+sql);
             return db.getRows(sql);//on execute la requete
       
     }
