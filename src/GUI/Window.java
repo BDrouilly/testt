@@ -175,13 +175,13 @@ public class Window extends javax.swing.JFrame {
 
         Combo_Interface.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/addmark.PNG"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("//src/GUI/addmark.PNG"))); // NOI18N
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/delmark.PNG"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("//src/GUI/delmark.PNG"))); // NOI18N
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/fleche_suivant.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("//src/GUI/fleche_suivant.png"))); // NOI18N
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/minisig/fleche_precedent.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("//src/GUI/fleche_precedent.png"))); // NOI18N
 
         javax.swing.GroupLayout Navigation_PanelLayout = new javax.swing.GroupLayout(Navigation_Panel);
         Navigation_Panel.setLayout(Navigation_PanelLayout);

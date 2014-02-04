@@ -24,7 +24,7 @@ public class DatabaseHandler {
 			 */
 			this.connectionString = "jdbc:mysql://localhost/";
 			this.user = "root";
-			this.pass = "";
+			this.pass = "13853211";
 			
 			this.connection = DriverManager.getConnection(this.connectionString, this.user, this.pass);
 			
