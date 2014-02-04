@@ -44,10 +44,10 @@ public class Window extends javax.swing.JFrame {
         Result_Research = new javax.swing.JTextArea();
         Navigation_Panel = new javax.swing.JPanel();
         Combo_Interface = new javax.swing.JComboBox();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        Button_AddPOI = new javax.swing.JButton();
+        Button_DelPOI = new javax.swing.JButton();
+        Button_Prev = new javax.swing.JButton();
+        Button_Next = new javax.swing.JButton();
         MenuBar = new javax.swing.JMenuBar();
         Menu_Lieux = new javax.swing.JMenu();
         Menu_POI = new javax.swing.JMenu();
@@ -175,13 +175,13 @@ public class Window extends javax.swing.JFrame {
 
         Combo_Interface.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/addmark.PNG")));
+        Button_AddPOI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/addmark.PNG")));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/delmark.PNG")));
+        Button_DelPOI.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/delmark.PNG")));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/fleche_suivant.png")));
+        Button_Prev.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/fleche_suivant.png")));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/fleche_precedent.png")));
+        Button_Next.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/fleche_precedent.png")));
 
         javax.swing.GroupLayout Navigation_PanelLayout = new javax.swing.GroupLayout(Navigation_Panel);
         Navigation_Panel.setLayout(Navigation_PanelLayout);
@@ -192,13 +192,13 @@ public class Window extends javax.swing.JFrame {
                 .addGroup(Navigation_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Combo_Interface, 0, 297, Short.MAX_VALUE)
                     .addGroup(Navigation_PanelLayout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button_AddPOI, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button_DelPOI, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Button_Next, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(Button_Prev, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         Navigation_PanelLayout.setVerticalGroup(
@@ -206,10 +206,10 @@ public class Window extends javax.swing.JFrame {
             .addGroup(Navigation_PanelLayout.createSequentialGroup()
                 .addGap(8, 8, 8)
                 .addGroup(Navigation_PanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Button_Prev, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button_Next, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button_AddPOI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Button_DelPOI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Combo_Interface, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(77, 77, 77))
@@ -263,6 +263,10 @@ public class Window extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Button_AddPOI;
+    private javax.swing.JButton Button_DelPOI;
+    private javax.swing.JButton Button_Next;
+    private javax.swing.JButton Button_Prev;
     private javax.swing.JComboBox Combo_Interface;
     public javax.swing.JLabel Info1;
     public javax.swing.JLabel Info2;
@@ -282,10 +286,6 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JScrollPane Scroll_Research;
     public javax.swing.JTextField SearchBar;
     private javax.swing.JTextArea Text_Information;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
